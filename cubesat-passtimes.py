@@ -126,8 +126,8 @@ if hours!=0 and passes==0:
         if addDateToDB == True:
             __start = rt
             __end = st
-            __start = __start.timetuple()
-            __end = __end.timetuple()
+            #__start = __start.timetuple()
+            #__end = __end.timetuple()
             addDBentry(__start, __end, math.degrees(ta))
 
 elif passes!=0 and hours==0:
